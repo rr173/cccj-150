@@ -1,0 +1,229 @@
+{
+ "pdf": "out/fixtures/ambiguous.pdf",
+ "page_count": 1,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表B：行界歧义示例",
+   "status": "ambiguous",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "frames": [
+    {
+     "fid": 0,
+     "page": 1,
+     "bbox": [
+      50.0,
+      96.0,
+      545.0,
+      228.0
+     ],
+     "table_name": "表B：行界歧义示例",
+     "columns": [
+      "编号",
+      "地区",
+      "对象",
+      "备注"
+     ],
+     "column_centers": [
+      64.5,
+      134.5,
+      204.5,
+      284.5
+     ],
+     "column_bounds": [
+      [
+       50.0,
+       99.5
+      ],
+      [
+       99.5,
+       169.5
+      ],
+      [
+       169.5,
+       244.5
+      ],
+      [
+       244.5,
+       545.0
+      ]
+     ],
+     "body_top": 122.0,
+     "body_bottom": 228.0,
+     "y_offset": 0.0
+    }
+   ],
+   "anchors": [
+    {
+     "id": "Q61",
+     "bid": 6,
+     "page": 1,
+     "bbox": [
+      54.0,
+      127.27,
+      71.81,
+      137.77
+     ],
+     "gy": 10.52
+    },
+    {
+     "id": "Q62",
+     "bid": 10,
+     "page": 1,
+     "bbox": [
+      54.0,
+      173.27,
+      71.81,
+      183.77
+     ],
+     "gy": 56.52
+    },
+    {
+     "id": "Q63",
+     "bid": 13,
+     "page": 1,
+     "bbox": [
+      54.0,
+      196.27,
+      71.81,
+      206.77
+     ],
+     "gy": 79.52
+    }
+   ],
+   "row_candidate_lines": [
+    {
+     "page": 1,
+     "y": 145.0,
+     "gy": 23.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    },
+    {
+     "page": 1,
+     "y": 168.0,
+     "gy": 46.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    },
+    {
+     "page": 1,
+     "y": 191.0,
+     "gy": 69.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    }
+   ],
+   "region_lines": [],
+   "region_intervals": [],
+   "seams": [],
+   "markers": [],
+   "fragments": [],
+   "slots": [
+    {
+     "slot": 0,
+     "between": [
+      "Q61",
+      "Q62"
+     ],
+     "seam": null,
+     "candidates": [
+      {
+       "gy": 23.0,
+       "legal": true,
+       "reason": ""
+      },
+      {
+       "gy": 46.0,
+       "legal": true,
+       "reason": ""
+      }
+     ],
+     "choice_count": 2
+    },
+    {
+     "slot": 1,
+     "between": [
+      "Q62",
+      "Q63"
+     ],
+     "seam": null,
+     "candidates": [
+      {
+       "gy": 69.0,
+       "legal": true,
+       "reason": ""
+      }
+     ],
+     "choice_count": 1
+    }
+   ],
+   "solution_count": 2,
+   "problems": [],
+   "notes": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 16,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

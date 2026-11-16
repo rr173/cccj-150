@@ -1,0 +1,251 @@
+{
+ "pdf": "out/fixtures/region_conflict.pdf",
+ "page_count": 1,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表G：地区区间冲突示例",
+   "status": "structural_corruption",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "frames": [
+    {
+     "fid": 0,
+     "page": 1,
+     "bbox": [
+      50.0,
+      96.0,
+      545.0,
+      220.0
+     ],
+     "table_name": "表G：地区区间冲突示例",
+     "columns": [
+      "编号",
+      "地区",
+      "对象",
+      "备注"
+     ],
+     "column_centers": [
+      64.5,
+      134.5,
+      204.5,
+      284.5
+     ],
+     "column_bounds": [
+      [
+       50.0,
+       99.5
+      ],
+      [
+       99.5,
+       169.5
+      ],
+      [
+       169.5,
+       244.5
+      ],
+      [
+       244.5,
+       545.0
+      ]
+     ],
+     "body_top": 122.0,
+     "body_bottom": 220.0,
+     "y_offset": 0.0
+    }
+   ],
+   "anchors": [
+    {
+     "id": "Q81",
+     "bid": 6,
+     "page": 1,
+     "bbox": [
+      54.0,
+      127.27,
+      71.81,
+      137.77
+     ],
+     "gy": 10.52
+    },
+    {
+     "id": "Q82",
+     "bid": 10,
+     "page": 1,
+     "bbox": [
+      54.0,
+      150.27,
+      71.81,
+      160.77
+     ],
+     "gy": 33.52
+    },
+    {
+     "id": "Q83",
+     "bid": 14,
+     "page": 1,
+     "bbox": [
+      54.0,
+      188.27,
+      71.81,
+      198.77
+     ],
+     "gy": 71.52
+    }
+   ],
+   "row_candidate_lines": [
+    {
+     "page": 1,
+     "y": 145.0,
+     "gy": 23.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    },
+    {
+     "page": 1,
+     "y": 183.0,
+     "gy": 61.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    }
+   ],
+   "region_lines": [
+    {
+     "page": 1,
+     "y": 122.0,
+     "gy": 0.0,
+     "x": [
+      105.5,
+      163.5
+     ]
+    },
+    {
+     "page": 1,
+     "y": 160.0,
+     "gy": 38.0,
+     "x": [
+      105.5,
+      163.5
+     ]
+    }
+   ],
+   "region_intervals": [
+    {
+     "value": "东部",
+     "gy": [
+      0.0,
+      38.0
+     ],
+     "block_bids": [
+      9
+     ]
+    }
+   ],
+   "seams": [],
+   "markers": [],
+   "fragments": [],
+   "slots": [
+    {
+     "slot": 0,
+     "between": [
+      "Q81",
+      "Q82"
+     ],
+     "seam": null,
+     "candidates": [
+      {
+       "gy": 23.0,
+       "legal": true,
+       "reason": ""
+      }
+     ],
+     "choice_count": 1
+    },
+    {
+     "slot": 1,
+     "between": [
+      "Q82",
+      "Q83"
+     ],
+     "seam": null,
+     "candidates": [
+      {
+       "gy": 61.0,
+       "legal": true,
+       "reason": ""
+      }
+     ],
+     "choice_count": 1
+    }
+   ],
+   "solution_count": 0,
+   "problems": [
+    {
+     "code": "no_legal_interpretation",
+     "message": "不存在满足全部布局约定（行界/地区区间/承接）的解释",
+     "page": null
+    }
+   ],
+   "notes": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 17,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

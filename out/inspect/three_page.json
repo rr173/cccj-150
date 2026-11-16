@@ -1,0 +1,374 @@
+{
+ "pdf": "out/fixtures/three_page.pdf",
+ "page_count": 3,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表C：三页承接示例",
+   "status": "ok",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "frames": [
+    {
+     "fid": 0,
+     "page": 1,
+     "bbox": [
+      50.0,
+      96.0,
+      545.0,
+      180.0
+     ],
+     "table_name": "表C：三页承接示例",
+     "columns": [
+      "编号",
+      "地区",
+      "对象",
+      "备注"
+     ],
+     "column_centers": [
+      64.5,
+      134.5,
+      204.5,
+      284.5
+     ],
+     "column_bounds": [
+      [
+       50.0,
+       99.5
+      ],
+      [
+       99.5,
+       169.5
+      ],
+      [
+       169.5,
+       244.5
+      ],
+      [
+       244.5,
+       545.0
+      ]
+     ],
+     "body_top": 122.0,
+     "body_bottom": 180.0,
+     "y_offset": 0.0
+    },
+    {
+     "fid": 1,
+     "page": 2,
+     "bbox": [
+      50.0,
+      96.0,
+      545.0,
+      180.0
+     ],
+     "table_name": "表C：三页承接示例",
+     "columns": [
+      "编号",
+      "地区",
+      "对象",
+      "备注"
+     ],
+     "column_centers": [
+      64.5,
+      144.5,
+      234.5,
+      294.5
+     ],
+     "column_bounds": [
+      [
+       50.0,
+       104.5
+      ],
+      [
+       104.5,
+       189.5
+      ],
+      [
+       189.5,
+       264.5
+      ],
+      [
+       264.5,
+       545.0
+      ]
+     ],
+     "body_top": 122.0,
+     "body_bottom": 180.0,
+     "y_offset": 58.0
+    },
+    {
+     "fid": 2,
+     "page": 3,
+     "bbox": [
+      50.0,
+      96.0,
+      545.0,
+      182.0
+     ],
+     "table_name": "表C：三页承接示例",
+     "columns": [
+      "编号",
+      "地区",
+      "对象",
+      "备注"
+     ],
+     "column_centers": [
+      64.5,
+      144.5,
+      224.5,
+      294.5
+     ],
+     "column_bounds": [
+      [
+       50.0,
+       104.5
+      ],
+      [
+       104.5,
+       184.5
+      ],
+      [
+       184.5,
+       259.5
+      ],
+      [
+       259.5,
+       545.0
+      ]
+     ],
+     "body_top": 122.0,
+     "body_bottom": 182.0,
+     "y_offset": 116.0
+    }
+   ],
+   "anchors": [
+    {
+     "id": "Q30",
+     "bid": 6,
+     "page": 1,
+     "bbox": [
+      54.0,
+      127.27,
+      71.81,
+      137.77
+     ],
+     "gy": 10.52
+    },
+    {
+     "id": "Q31",
+     "bid": 29,
+     "page": 3,
+     "bbox": [
+      54.0,
+      150.27,
+      71.81,
+      160.77
+     ],
+     "gy": 149.52
+    }
+   ],
+   "row_candidate_lines": [
+    {
+     "page": 1,
+     "y": 160.0,
+     "gy": 38.0,
+     "x": [
+      56.0,
+      93.5
+     ]
+    },
+    {
+     "page": 2,
+     "y": 160.0,
+     "gy": 96.0,
+     "x": [
+      56.0,
+      98.5
+     ]
+    },
+    {
+     "page": 3,
+     "y": 145.0,
+     "gy": 139.0,
+     "x": [
+      56.0,
+      98.5
+     ]
+    }
+   ],
+   "region_lines": [],
+   "region_intervals": [],
+   "seams": [
+    {
+     "gy": 58.0,
+     "between_frames": [
+      0,
+      1
+     ],
+     "kind": "continuation",
+     "marker_bid": 17
+    },
+    {
+     "gy": 116.0,
+     "between_frames": [
+      1,
+      2
+     ],
+     "kind": "continuation",
+     "marker_bid": 27
+    }
+   ],
+   "markers": [
+    {
+     "bid": 17,
+     "page": 2,
+     "text": "Q30（续）",
+     "id": "Q30"
+    },
+    {
+     "bid": 27,
+     "page": 3,
+     "text": "Q30（续）",
+     "id": "Q30"
+    }
+   ],
+   "fragments": [],
+   "slots": [
+    {
+     "slot": 0,
+     "between": [
+      "Q30",
+      "Q31"
+     ],
+     "seam": "continuation",
+     "candidates": [
+      {
+       "gy": 38.0,
+       "legal": false,
+       "reason": "位于承接标记之上（标记须属于虚拟锚点所在行）"
+      },
+      {
+       "gy": 96.0,
+       "legal": false,
+       "reason": "位于承接标记之上（标记须属于虚拟锚点所在行）"
+      },
+      {
+       "gy": 139.0,
+       "legal": true,
+       "reason": ""
+      }
+     ],
+     "choice_count": 1
+    }
+   ],
+   "solution_count": 1,
+   "problems": [],
+   "notes": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 10,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 11,
+   "page": 2,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 20,
+   "page": 2,
+   "text": "- 2 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 21,
+   "page": 3,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 32,
+   "page": 3,
+   "text": "- 3 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

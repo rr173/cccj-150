@@ -1,0 +1,308 @@
+{
+ "pdf": "out/fixtures/three_page.pdf",
+ "page_count": 3,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表C：三页承接示例",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    1,
+    2,
+    3
+   ],
+   "status": "ok",
+   "records": [
+    {
+     "row_index": 0,
+     "id": "Q30",
+     "status": "ok",
+     "pages": [
+      1,
+      2,
+      3
+     ],
+     "spans_page_break": true,
+     "fields": {
+      "编号": {
+       "value": "Q30",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 6,
+         "page": 1,
+         "bbox": [
+          54.0,
+          127.27,
+          71.81,
+          137.77
+         ],
+         "text": "Q30"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "甲某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 7,
+         "page": 1,
+         "bbox": [
+          194.0,
+          127.27,
+          215.0,
+          137.77
+         ],
+         "text": "甲某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "三页备注第一段\n三页备注第二段\n三页备注第三段\n三页备注第四段\n三页备注第五段",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 8,
+         "page": 1,
+         "bbox": [
+          274.0,
+          127.27,
+          347.5,
+          137.77
+         ],
+         "text": "三页备注第一段"
+        },
+        {
+         "bid": 9,
+         "page": 1,
+         "bbox": [
+          274.0,
+          142.27,
+          347.5,
+          152.77
+         ],
+         "text": "三页备注第二段"
+        },
+        {
+         "bid": 18,
+         "page": 2,
+         "bbox": [
+          284.0,
+          127.27,
+          357.5,
+          137.77
+         ],
+         "text": "三页备注第三段"
+        },
+        {
+         "bid": 19,
+         "page": 2,
+         "bbox": [
+          284.0,
+          142.27,
+          357.5,
+          152.77
+         ],
+         "text": "三页备注第四段"
+        },
+        {
+         "bid": 28,
+         "page": 3,
+         "bbox": [
+          284.0,
+          127.27,
+          357.5,
+          137.77
+         ],
+         "text": "三页备注第五段"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 1,
+     "id": "Q31",
+     "status": "ok",
+     "pages": [
+      3
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q31",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 29,
+         "page": 3,
+         "bbox": [
+          54.0,
+          150.27,
+          71.81,
+          160.77
+         ],
+         "text": "Q31"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "乙某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 30,
+         "page": 3,
+         "bbox": [
+          214.0,
+          150.27,
+          235.0,
+          160.77
+         ],
+         "text": "乙某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "三一备注",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 31,
+         "page": 3,
+         "bbox": [
+          284.0,
+          150.27,
+          326.0,
+          160.77
+         ],
+         "text": "三一备注"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "isolations": [],
+   "to_verify": [],
+   "problems": [],
+   "region_intervals": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 10,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 11,
+   "page": 2,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 20,
+   "page": 2,
+   "text": "- 2 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 21,
+   "page": 3,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 32,
+   "page": 3,
+   "text": "- 3 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

@@ -1,0 +1,29 @@
+{
+ "表D：核查询问记录": {
+  "status": "ok",
+  "records": {
+   "Q41": {
+    "status": "to_verify",
+    "备注": "四一备注上半部分"
+   }
+  },
+  "to_verify_kinds": [
+   "possibly_unfinished_row"
+  ]
+ },
+ "表X：另一份独立表": {
+  "status": "ok",
+  "records": {
+   "Q42": {
+    "status": "ok",
+    "备注": "四二备注"
+   }
+  },
+  "to_verify_kinds": [
+   "unattached_fragment"
+  ],
+  "fragment_texts": [
+   "这是上一页遗留的片段文字"
+  ]
+ }
+}

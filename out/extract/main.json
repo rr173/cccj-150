@@ -1,0 +1,792 @@
+{
+ "pdf": "out/fixtures/main.pdf",
+ "page_count": 2,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表A：人居环境调查长表",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    1,
+    2
+   ],
+   "status": "ok",
+   "records": [
+    {
+     "row_index": 0,
+     "id": "Q11",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q11",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 6,
+         "page": 1,
+         "bbox": [
+          54.0,
+          127.27,
+          71.81,
+          137.77
+         ],
+         "text": "Q11"
+        }
+       ]
+      },
+      "地区": {
+       "value": "北部",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 9,
+         "page": 1,
+         "bbox": [
+          144.5,
+          141.02,
+          165.5,
+          151.52
+         ],
+         "text": "北部"
+        }
+       ]
+      },
+      "对象": {
+       "value": "张某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 7,
+         "page": 1,
+         "bbox": [
+          194.0,
+          127.27,
+          215.0,
+          137.77
+         ],
+         "text": "张某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "实地走访记录完整",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 8,
+         "page": 1,
+         "bbox": [
+          274.0,
+          127.27,
+          358.0,
+          137.77
+         ],
+         "text": "实地走访记录完整"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 1,
+     "id": "Q12",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q12",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 10,
+         "page": 1,
+         "bbox": [
+          54.0,
+          150.27,
+          71.81,
+          160.77
+         ],
+         "text": "Q12"
+        }
+       ]
+      },
+      "地区": {
+       "value": "北部",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 9,
+         "page": 1,
+         "bbox": [
+          144.5,
+          141.02,
+          165.5,
+          151.52
+         ],
+         "text": "北部"
+        }
+       ]
+      },
+      "对象": {
+       "value": "李某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 11,
+         "page": 1,
+         "bbox": [
+          194.0,
+          150.27,
+          215.0,
+          160.77
+         ],
+         "text": "李某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      }
+     }
+    },
+    {
+     "row_index": 2,
+     "id": "Q13",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q13",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 12,
+         "page": 1,
+         "bbox": [
+          54.0,
+          173.27,
+          71.81,
+          183.77
+         ],
+         "text": "Q13"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "王某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 13,
+         "page": 1,
+         "bbox": [
+          194.0,
+          173.27,
+          215.0,
+          183.77
+         ],
+         "text": "王某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "备注第一行文字\n备注第二行文字",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 14,
+         "page": 1,
+         "bbox": [
+          274.0,
+          173.27,
+          347.5,
+          183.77
+         ],
+         "text": "备注第一行文字"
+        },
+        {
+         "bid": 15,
+         "page": 1,
+         "bbox": [
+          274.0,
+          188.27,
+          347.5,
+          198.77
+         ],
+         "text": "备注第二行文字"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 3,
+     "id": "Q14",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q14",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 16,
+         "page": 1,
+         "bbox": [
+          54.0,
+          211.27,
+          71.81,
+          221.77
+         ],
+         "text": "Q14"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "赵某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 17,
+         "page": 1,
+         "bbox": [
+          194.0,
+          211.27,
+          215.0,
+          221.77
+         ],
+         "text": "赵某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "单次访谈",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 18,
+         "page": 1,
+         "bbox": [
+          274.0,
+          211.27,
+          316.0,
+          221.77
+         ],
+         "text": "单次访谈"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 4,
+     "id": "Q15",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q15",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 19,
+         "page": 1,
+         "bbox": [
+          54.0,
+          234.27,
+          71.81,
+          244.77
+         ],
+         "text": "Q15"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "备注": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      }
+     }
+    },
+    {
+     "row_index": 5,
+     "id": "Q16",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q16",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 20,
+         "page": 1,
+         "bbox": [
+          54.0,
+          257.27,
+          71.81,
+          267.77
+         ],
+         "text": "Q16"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "周某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 21,
+         "page": 1,
+         "bbox": [
+          194.0,
+          257.27,
+          215.0,
+          267.77
+         ],
+         "text": "周某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "电话复核无误",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 22,
+         "page": 1,
+         "bbox": [
+          274.0,
+          257.27,
+          337.0,
+          267.77
+         ],
+         "text": "电话复核无误"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 6,
+     "id": "Q17",
+     "status": "ok",
+     "pages": [
+      1,
+      2
+     ],
+     "spans_page_break": true,
+     "fields": {
+      "编号": {
+       "value": "Q17",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 23,
+         "page": 1,
+         "bbox": [
+          54.0,
+          280.27,
+          71.81,
+          290.77
+         ],
+         "text": "Q17"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "吴某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 24,
+         "page": 1,
+         "bbox": [
+          194.0,
+          280.27,
+          215.0,
+          290.77
+         ],
+         "text": "吴某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "第一部分记录：房屋结构完好\n院落排水需要整修\n杂物堆放已现场清理\n后续电话回访确认",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 25,
+         "page": 1,
+         "bbox": [
+          274.0,
+          280.27,
+          410.5,
+          290.77
+         ],
+         "text": "第一部分记录：房屋结构完好"
+        },
+        {
+         "bid": 26,
+         "page": 1,
+         "bbox": [
+          274.0,
+          295.27,
+          358.0,
+          305.77
+         ],
+         "text": "院落排水需要整修"
+        },
+        {
+         "bid": 35,
+         "page": 2,
+         "bbox": [
+          284.0,
+          127.27,
+          378.5,
+          137.77
+         ],
+         "text": "杂物堆放已现场清理"
+        },
+        {
+         "bid": 36,
+         "page": 2,
+         "bbox": [
+          284.0,
+          142.27,
+          368.0,
+          152.77
+         ],
+         "text": "后续电话回访确认"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 7,
+     "id": "Q18",
+     "status": "ok",
+     "pages": [
+      2
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q18",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 37,
+         "page": 2,
+         "bbox": [
+          54.0,
+          165.27,
+          71.81,
+          175.77
+         ],
+         "text": "Q18"
+        }
+       ]
+      },
+      "地区": {
+       "value": "南部",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 40,
+         "page": 2,
+         "bbox": [
+          164.5,
+          186.02,
+          185.5,
+          196.52
+         ],
+         "text": "南部"
+        }
+       ]
+      },
+      "对象": {
+       "value": "郑某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 38,
+         "page": 2,
+         "bbox": [
+          224.0,
+          165.27,
+          245.0,
+          175.77
+         ],
+         "text": "郑某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "新开工地已备案",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 39,
+         "page": 2,
+         "bbox": [
+          284.0,
+          165.27,
+          357.5,
+          175.77
+         ],
+         "text": "新开工地已备案"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "row_index": 8,
+     "id": "Q19",
+     "status": "ok",
+     "pages": [
+      2
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q19",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 41,
+         "page": 2,
+         "bbox": [
+          54.0,
+          188.27,
+          71.81,
+          198.77
+         ],
+         "text": "Q19"
+        }
+       ]
+      },
+      "地区": {
+       "value": "南部",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 40,
+         "page": 2,
+         "bbox": [
+          164.5,
+          186.02,
+          185.5,
+          196.52
+         ],
+         "text": "南部"
+        }
+       ]
+      },
+      "对象": {
+       "value": "孙某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 42,
+         "page": 2,
+         "bbox": [
+          224.0,
+          188.27,
+          245.0,
+          198.77
+         ],
+         "text": "孙某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      }
+     }
+    }
+   ],
+   "isolations": [],
+   "to_verify": [],
+   "problems": [],
+   "region_intervals": [
+    {
+     "value": "北部",
+     "gy": [
+      0.0,
+      46.0
+     ],
+     "endpoints": [
+      {
+       "page": 1,
+       "y": 122.0
+      },
+      {
+       "page": 1,
+       "y": 168.0
+      }
+     ],
+     "block_bids": [
+      9
+     ]
+    },
+    {
+     "value": "南部",
+     "gy": [
+      256.0,
+      316.0
+     ],
+     "endpoints": [
+      {
+       "page": 2,
+       "y": 160.0
+      },
+      {
+       "page": 2,
+       "y": 220.0
+      }
+     ],
+     "block_bids": [
+      40
+     ]
+    }
+   ]
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 27,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 28,
+   "page": 2,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 43,
+   "page": 2,
+   "text": "- 2 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

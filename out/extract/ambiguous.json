@@ -1,0 +1,378 @@
+{
+ "pdf": "out/fixtures/ambiguous.pdf",
+ "page_count": 1,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表B：行界歧义示例",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    1
+   ],
+   "status": "ambiguous",
+   "records": [
+    {
+     "row_index": 0,
+     "id": "Q61",
+     "status": "isolated",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q61",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 6,
+         "page": 1,
+         "bbox": [
+          54.0,
+          127.27,
+          71.81,
+          137.77
+         ],
+         "text": "Q61"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "甲某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 7,
+         "page": 1,
+         "bbox": [
+          194.0,
+          127.27,
+          215.0,
+          137.77
+         ],
+         "text": "甲某"
+        }
+       ]
+      },
+      "备注": null
+     },
+     "isolation_group": 0
+    },
+    {
+     "row_index": 1,
+     "id": "Q62",
+     "status": "isolated",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q62",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 10,
+         "page": 1,
+         "bbox": [
+          54.0,
+          173.27,
+          71.81,
+          183.77
+         ],
+         "text": "Q62"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "乙某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 11,
+         "page": 1,
+         "bbox": [
+          194.0,
+          173.27,
+          215.0,
+          183.77
+         ],
+         "text": "乙某"
+        }
+       ]
+      },
+      "备注": null
+     },
+     "isolation_group": 0
+    },
+    {
+     "row_index": 2,
+     "id": "Q63",
+     "status": "ok",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q63",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 13,
+         "page": 1,
+         "bbox": [
+          54.0,
+          196.27,
+          71.81,
+          206.77
+         ],
+         "text": "Q63"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "丙某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 14,
+         "page": 1,
+         "bbox": [
+          194.0,
+          196.27,
+          215.0,
+          206.77
+         ],
+         "text": "丙某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "六三备注",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 15,
+         "page": 1,
+         "bbox": [
+          274.0,
+          196.27,
+          316.0,
+          206.77
+         ],
+         "text": "六三备注"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "isolations": [
+    {
+     "group_id": 0,
+     "rows": [
+      0,
+      1
+     ],
+     "row_ids": [
+      "Q61",
+      "Q62"
+     ],
+     "varying_blocks": [
+      9
+     ],
+     "witnesses": [
+      {
+       "boundaries": [
+        {
+         "gy": 0.0,
+         "page": 1,
+         "y": 122.0,
+         "source": "body_top"
+        },
+        {
+         "gy": 23.0,
+         "page": 1,
+         "y": 145.0,
+         "source": "line"
+        },
+        {
+         "gy": 69.0,
+         "page": 1,
+         "y": 191.0,
+         "source": "line"
+        },
+        {
+         "gy": 106.0,
+         "page": 1,
+         "y": 228.0,
+         "source": "body_bottom"
+        }
+       ],
+       "assignments": {
+        "7": 0,
+        "8": 0,
+        "9": 1,
+        "11": 1,
+        "12": 1,
+        "14": 2,
+        "15": 2
+       },
+       "region_map": [
+        -1,
+        -1,
+        -1
+       ],
+       "group_row_fields": {
+        "0": {
+         "编号": "Q61",
+         "地区": "",
+         "对象": "甲某",
+         "备注": "六一备注"
+        },
+        "1": {
+         "编号": "Q62",
+         "地区": "",
+         "对象": "乙某",
+         "备注": "待补充材料\n六二备注"
+        }
+       }
+      },
+      {
+       "boundaries": [
+        {
+         "gy": 0.0,
+         "page": 1,
+         "y": 122.0,
+         "source": "body_top"
+        },
+        {
+         "gy": 46.0,
+         "page": 1,
+         "y": 168.0,
+         "source": "line"
+        },
+        {
+         "gy": 69.0,
+         "page": 1,
+         "y": 191.0,
+         "source": "line"
+        },
+        {
+         "gy": 106.0,
+         "page": 1,
+         "y": 228.0,
+         "source": "body_bottom"
+        }
+       ],
+       "assignments": {
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "11": 1,
+        "12": 1,
+        "14": 2,
+        "15": 2
+       },
+       "region_map": [
+        -1,
+        -1,
+        -1
+       ],
+       "group_row_fields": {
+        "0": {
+         "编号": "Q61",
+         "地区": "",
+         "对象": "甲某",
+         "备注": "六一备注\n待补充材料"
+        },
+        "1": {
+         "编号": "Q62",
+         "地区": "",
+         "对象": "乙某",
+         "备注": "六二备注"
+        }
+       }
+      }
+     ]
+    }
+   ],
+   "to_verify": [],
+   "problems": [],
+   "region_intervals": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 16,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

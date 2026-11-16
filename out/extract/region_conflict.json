@@ -1,0 +1,104 @@
+{
+ "pdf": "out/fixtures/region_conflict.pdf",
+ "page_count": 1,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表G：地区区间冲突示例",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    1
+   ],
+   "status": "structural_corruption",
+   "records": [],
+   "isolations": [],
+   "to_verify": [],
+   "problems": [
+    {
+     "code": "no_legal_interpretation",
+     "message": "不存在满足全部布局约定（行界/地区区间/承接）的解释",
+     "page": null
+    }
+   ],
+   "region_intervals": [
+    {
+     "value": "东部",
+     "gy": [
+      0.0,
+      38.0
+     ],
+     "endpoints": [
+      {
+       "page": 1,
+       "y": 122.0
+      },
+      {
+       "page": 1,
+       "y": 160.0
+      }
+     ],
+     "block_bids": [
+      9
+     ]
+    }
+   ]
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 17,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}

@@ -1,0 +1,282 @@
+{
+ "pdf": "out/fixtures/title_mismatch.pdf",
+ "page_count": 2,
+ "config": {
+  "line_y_tol": 2.0,
+  "char_gap_tol": 2.0,
+  "header_cluster_gap": 4.0,
+  "col_cross_tol": 1.5,
+  "boundary_touch_tol": 1.0,
+  "line_x_tol": 2.0,
+  "line_up_tol": 2.0,
+  "name_max_dist": 48.0,
+  "frame_min_width": 100.0,
+  "frame_min_height": 30.0,
+  "full_width_ratio": 0.9,
+  "marker_band": 60.0,
+  "id_column": 0,
+  "region_column_name": "地区",
+  "id_pattern": "Q\\d+",
+  "marker_suffixes": [
+   "（续）",
+   "(续)",
+   "(continued)",
+   "(Continued)"
+  ],
+  "max_solutions": 2000,
+  "coord_digits": 2
+ },
+ "tables": [
+  {
+   "tid": 0,
+   "name": "表D：核查询问记录",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    1
+   ],
+   "status": "ok",
+   "records": [
+    {
+     "row_index": 0,
+     "id": "Q41",
+     "status": "to_verify",
+     "pages": [
+      1
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q41",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 6,
+         "page": 1,
+         "bbox": [
+          54.0,
+          127.27,
+          71.81,
+          137.77
+         ],
+         "text": "Q41"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "甲某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 7,
+         "page": 1,
+         "bbox": [
+          194.0,
+          127.27,
+          215.0,
+          137.77
+         ],
+         "text": "甲某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "四一备注上半部分",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 8,
+         "page": 1,
+         "bbox": [
+          274.0,
+          127.27,
+          358.0,
+          137.77
+         ],
+         "text": "四一备注上半部分"
+        }
+       ]
+      }
+     },
+     "to_verify_reason": "可能未完：后续表首存在无编号片段，但承接证据不完整"
+    }
+   ],
+   "isolations": [],
+   "to_verify": [
+    {
+     "kind": "possibly_unfinished_row",
+     "record_id": "Q41",
+     "reason": "后续表首存在无编号片段，但表名/列序/地区延续不匹配，无法承接",
+     "blocks": []
+    }
+   ],
+   "problems": [],
+   "region_intervals": []
+  },
+  {
+   "tid": 1,
+   "name": "表X：另一份独立表",
+   "columns": [
+    "编号",
+    "地区",
+    "对象",
+    "备注"
+   ],
+   "pages": [
+    2
+   ],
+   "status": "ok",
+   "records": [
+    {
+     "row_index": 0,
+     "id": "Q42",
+     "status": "ok",
+     "pages": [
+      2
+     ],
+     "spans_page_break": false,
+     "fields": {
+      "编号": {
+       "value": "Q42",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 17,
+         "page": 2,
+         "bbox": [
+          54.0,
+          150.27,
+          71.81,
+          160.77
+         ],
+         "text": "Q42"
+        }
+       ]
+      },
+      "地区": {
+       "value": "",
+       "empty": true,
+       "sources": []
+      },
+      "对象": {
+       "value": "乙某",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 18,
+         "page": 2,
+         "bbox": [
+          194.0,
+          150.27,
+          215.0,
+          160.77
+         ],
+         "text": "乙某"
+        }
+       ]
+      },
+      "备注": {
+       "value": "四二备注",
+       "empty": false,
+       "sources": [
+        {
+         "bid": 19,
+         "page": 2,
+         "bbox": [
+          274.0,
+          150.27,
+          316.0,
+          160.77
+         ],
+         "text": "四二备注"
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "isolations": [],
+   "to_verify": [
+    {
+     "kind": "unattached_fragment",
+     "reason": "该表未能作为续页接入前表（表名/列序/地区延续不匹配），表首无编号片段不予归属",
+     "blocks": [
+      {
+       "bid": 16,
+       "page": 2,
+       "bbox": [
+        274.0,
+        127.27,
+        400.0,
+        137.77
+       ],
+       "text": "这是上一页遗留的片段文字"
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "region_intervals": []
+  }
+ ],
+ "ignored_texts": [
+  {
+   "bid": 0,
+   "page": 1,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 9,
+   "page": 1,
+   "text": "- 1 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 10,
+   "page": 2,
+   "text": "调查长表汇编（内部资料）",
+   "bbox": [
+    234.5,
+    41.27,
+    360.5,
+    51.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  },
+  {
+   "bid": 20,
+   "page": 2,
+   "text": "- 2 -",
+   "bbox": [
+    288.96,
+    801.27,
+    306.04,
+    811.77
+   ],
+   "reason": "表框之外（页眉/页脚/下一表名等），不是业务值"
+  }
+ ],
+ "problems": []
+}
